@@ -29,8 +29,7 @@ test.describe("Cymulate – download and verify Findings report", () => {
     await findings.applyBasModuleFilter();
 
     // Read UI values (first row)
-    const ui = await findings.readFirstRow(); // { name, timestamp, status }
-
+    const ui = await findings.readFirstRow();
     // 4) Select first row and export
     await findings.selectFirstRow();
     const waitForSave = saveNextDownload(page); // start listening BEFORE clicking
