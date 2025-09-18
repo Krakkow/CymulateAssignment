@@ -1,0 +1,8 @@
+# folders and files to ignore
+node_modules/
+dist/
+playwright-report/
+test-results/
+downloads/
+
+.env

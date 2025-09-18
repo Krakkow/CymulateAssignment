@@ -1,0 +1,30 @@
+{
+  "name": "cymulate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npx playwright install --with-deps",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "clean:downloads": "node -e \"require('fs-extra').emptyDirSync('downloads')\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/fs-extra": "^11.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.44.0",
+    "@typescript-eslint/parser": "^8.44.0",
+    "csv-parse": "^6.1.0",
+    "dotenv": "^17.2.2",
+    "eslint": "^9.35.0",
+    "fs-extra": "^11.3.2",
+    "playwright": "^1.55.0",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
