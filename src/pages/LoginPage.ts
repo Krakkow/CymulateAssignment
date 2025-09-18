@@ -16,7 +16,12 @@ export class LoginPage extends BasePage {
       .or(this.page.locator('input[type="password"], input[name="password"]'))
       .first()
   );
-  private readonly loginButton = this.page.getByTestId("sign-in");
+  private readonly loginButton = this.page.getByTestId("sign-in").or(
+    this.page
+      .getByRole("button", { name: /log\s*in|sign\s*in|submit/i })
+      .or(this.page.locator('button[type="submit"]'))
+      .first()
+  );
 
   private readonly findingsTab = this.page.getByRole("link", { name: /cym/ });
 
