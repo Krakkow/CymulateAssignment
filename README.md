@@ -5,7 +5,7 @@ npm run prepare
 
 # Set env (copy .env.example → .env)
 
-BASE_URL=https://app.cymulate.com
+BASE_URL=https://app.cymulate.com/cym
 CY_EMAIL=...
 CY_PASSWORD=...
 
