@@ -39,7 +39,7 @@ npx playwright install --with-deps
 Create a `.env` file at the project root (a `.env.example` is provided):
 
 ```ini
-BASE_URL=https://app.cymulate.com
+BASE_URL=https://app.cymulate.com/cyn
 CY_EMAIL=your_email@example.com     # or CY_MAIL
 CY_PASSWORD=your_password_here      # or CY_PASS
 ```
